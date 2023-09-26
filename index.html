@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Help us improve our product</p>
+    <form id="survey-form">
+        <fieldset>
+            <label id="name-label">Name<input id="name" type="text" placeholder="Enter your name" required></label>
+            <label id="email-label">Email<input id="email" type="email" placeholder="Enter your email" required></label>
+            <label id="number-label">Age (optional)<input id="number" type="number" placeholder="Enter your age" min="18" max="100" optional></label>
+        </fieldset>
+        <fieldset>
+            <label>When was the last time you used our product?
+                <select id="dropdown">
+                    <option value="">Select One</option>
+                    <option value="1">Last Week</option>
+                    <option value="2">Last Month</option>
+                    <option value="3">Last 3 Months</option> 
+                    <option value="4">Last 6 Months</option>
+                    <option value="5">Last Year</option>
+                </select>
+        </fieldset>
+        <fieldset>
+            <p>How satisfied are you with the price of our product?</p>
+            <label><input value="extremely-satisfied" name="satisfaction" type="radio" class="inline">Extremely Satisfied</label>
+            <label><input value="very-satisfied" name="satisfaction" type="radio" class="inline">Very Satisfied</label>
+            <label><input value="moderately-satisfied" name="satisfaction" type="radio" class="inline">Moderately Satisfied</label>
+            <label><input value="extremely-dissatisfied" name="satisfaction" type="radio" class="inline">Extremely Dissatisfied</label>
+            <label><input value="very-dissatisfied" name="satisfaction" type="radio" class="inline">Very Dissatisfied</label>
+            <label><input value="moderately-dissatisfied" name="satisfaction" type="radio" class="inline">Moderately Dissatisfied</label>
+        </fieldset>
+        <fieldset>
+            <p>What would you like to see improved? (Check all that apply)</p>
+                <label><input value="price" type="checkbox" class="inline">Price</label>
+                <label><input value="packaging"  type="checkbox" class="inline">Packaging</label>
+                <label><input value="quality" type="checkbox" class="inline">Quality</label><br>
+            <label>What would you like us to change to our product?
+                <textarea rows="3" cols="30" placeholder="Type your answer here..."></textarea>
+              </label>
+        </fieldset>
+        <input id="submit" type="submit" value="Submit" />
+    </form>
+</body>
+</html>

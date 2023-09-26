@@ -1,0 +1,56 @@
+body{
+    font-family: 'Quicksand', sans-serif;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    background-color: #F5F5DC;
+    color: #004225;
+}
+
+h1, #description {
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    margin: 1em auto;
+}
+
+form {
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
+
+fieldset {
+    border: none;
+    padding: 1rem 0;
+}
+
+label{
+    display: block;
+}
+
+.inline {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+  }
+
+
+textarea, input, option {
+    font-family: 'Quicksand', sans-serif;
+    margin: 10px 0 0 0;
+    width: 100%;
+    min-height: 2em;
+}
+
+input[type="submit"] {
+    display: block;
+    width: 60%;
+    margin: 1em auto;
+    height: 2em;
+    text-align: center;
+    font-size: 1rem;
+    background-color:#F1C376; 
+    min-width: 300px;
+  }
